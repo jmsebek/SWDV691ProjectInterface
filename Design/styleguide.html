@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Style Guide</title>
+
+    <!-- Site theme -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+        body {
+            font-family: "Comfortaa", Helvetica, Arial, "sans-serif";
+            color: black;
+        }
+
+        .navbar-header{
+            background-color: #61879e;
+            height: 20px;
+            padding:30px;
+            
+        }
+
+        .navbar-brand{
+            
+            padding: 50px;
+            color: white;
+            
+            
+        }
+
+        .header-container{
+            width:100%;
+            background-position: center;
+        }
+
+        .container{
+            width:90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .col-md-3{
+            width: 150px;
+            float: left;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .col-md-9{
+            padding: 10px;
+            margin: 0 200px 0 191px;
+        }
+
+        a{
+            text-decoration: none;
+            }
+            
+        .list-group-item {
+            display: block;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        fieldset {
+            border: 1px solid #040404;
+            padding:10px;
+        }
+
+        button {
+            background-color: #61879e;
+            border: 1px solid #d7d9cf;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+        }
+
+        .inputLabel {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input.inputField {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #040404;
+        }
+
+        input.radioButton {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            
+            
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            padding: 3px;
+            border: 2px solid #3d5a80;
+            border-radius: 50%;
+            margin-right: 0;
+            
+        }
+
+        input.radioButton:checked{
+            background-color: #61879e;
+        }
+
+        input.checkBox{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            
+            
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            padding: 3px;
+            border: 2px solid #3d5a80;
+            border-radius: 1px;
+            margin-right: 0;
+            vertical-align: bottom;
+
+        }
+
+        input.checkBox:checked{
+            background-color: #61879e;
+        }
+
+        div.box {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            margin: 0 10px 0 10px;
+        }
+
+        #primary1 {
+            background-color: #d0dbe2;
+        }
+
+        #primary2 {
+            background-color: #d7d9cf;
+        }
+
+        #primary3 {
+            background-color: #040404;
+        }
+
+        #primary4 {
+            background-color: #61879e;
+        }
+
+        #primary5 {
+            background-color: #3d5a80;
+        }
+
+
+
+        .warning {
+            background-color: #f7f76b;
+            font-weight: bold;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .danger {
+            background-color: #fa5347;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .success {
+            background-color: #339900;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        svg.svg-inline--fa {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .spacer {
+            margin-top: 25px;
+        }
+
+        #footer {
+            border-top: 1px solid #dddddd;
+            background-color: #d7d9cf;
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+
+    </style>
+
+    <!-- Include script for font awesome icon library -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+    <a name="Top"></a>
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="header-container">
+            <div class="navbar-header">
+                <a href="#">
+                    <span class="navbar-brand">
+                        <i class="fas fa-home"></i>Pilot Logbook Manager Style Guide</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="#font">Font</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#colorTheme">Color Theme</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#headings">Headings</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#buttons">Buttons</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#formElements">Form Elements</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#messages">Messages</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <!-- About -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="about"></a>My Styles</h1>
+                </div>
+                <p>This page contains specific style guide information for my front end interface.</p>
+            </div>
+            <!-- End About -->
+
+            <!-- Fonts -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="fonts"></a>Font</h1>
+                </div>
+                <p>My application utilizes the "Comfortaa", Helvetica,
+                    Arial, "sans-serif" font-family with black text.</p>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Fonts -->
+
+            <!-- Color Theme -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="colorTheme"></a>Color Theme</h1>
+                </div>
+                <p>My application incorporates the below color scheme in its interface.</p>
+                <div class="box" id="primary1"></div>
+                <div class="box" id="primary2"></div>
+                <div class="box" id="primary3"></div>
+                <div class="box" id="primary4"></div>
+                <div class="box" id="primary5"></div>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Color Theme -->
+
+            <!-- Headings -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="headings"></a>Headings</h1>
+                </div>
+                <p>The below font sizes and styles are used in the application for various content headings.</p>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Headings -->
+
+            <!-- Buttons -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="buttons"></a>Buttons</h1>
+                </div>
+                <p>The application will feature buttons that contain the below color and shape:</p>
+                <button>My Button</button>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Buttons -->
+
+            <!-- Form Elements -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="formElements"></a>Form Elements</h1>
+                </div>
+                <p>For the various forms that the application will contain, it will contain input fields and labels with the below styling:</p>
+                <form>
+                    <label for="name" class="inputLabel">Name:</label><br>
+                    <input type="input" id="name" class="inputField" placeholder="Name">
+                    <br>
+                    <p>For the various forms that the application will contain, it will contain radio buttons and labels with the below styling:</p>
+                    <fieldset>
+                    <label for="choices" class="inputLabel">Choice:</label>
+                        <input type="radio" class="radioButton" id="choice1" name="choices" value="choice1" checked>
+                        <input type="radio" class="radioButton" id="choice2" name="choices" value="choice2">
+                    </fieldset>
+                    <br>
+                    <p>For the various forms that the application will contain, it will contain checkboxes and labels with the below styling:</p>
+                    <label class="inputLabel"><input type="checkbox" class="checkBox" name="checkBox" value="choice3" checked> &nbsp;Checked</label>
+                    <label class="inputLabel"><input type="checkbox" class="checkBox" name="checkBox" value="choice4"> &nbsp;Unchecked</label>
+                    </form>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Form Elements -->
+
+            <!-- User Messages -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="messages"></a>Messages</h1>
+                </div>
+                <p>For various completed tasks, application notifications will be presented to the user based.  The following contextual messages will be used.</p>
+                <p class="warning">Warning!</p>
+                <p class="danger">Danger!</p>
+                <p class="success">Success!</p>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End User Messages -->
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">Copyright My Style Guide</p>
+        </div>
+    </div>
+</body>
+
+</html>
