@@ -1,0 +1,43 @@
+{% extends 'userbase.html' %}
+
+{% block title %}Account Detail{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<p class="right-align">Hi, {{ user.username }}!</p>
+<h1>Account Detail</h1>
+<div class="container">
+  <div class="row userhome">
+    <div class="col-lg d-flex">
+      <div class="content flex-fill">
+      <h3>Your account:</h3>
+      <p>Name: </p>
+      <p>Age: </p>
+      <p>Current Flying Type: </p>
+      <p>Current Aircraft Type: </p>
+      <p>PIC/SIC: </p>
+      <h3>Certificates:</h3>
+      <p>No current data.</p>
+      <h3>Ratings</h3>
+      <p>No current data.</p>
+      </div>
+    </div>
+    <div class="col-lg d-flex">
+      <div class="content flex-fill">
+        <h3>Add account detail:</h3>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+{% else %}
+<div id="login-needed">
+  <p>You are not logged in.</p>
+  <p>Please <a href="{% url 'login' %}">Log In</a> or <a href="{% url 'signup' %}">Sign Up</a> to view account detail.</p>
+</div>
+  
+  
+{% endif %}
+{% endblock %}

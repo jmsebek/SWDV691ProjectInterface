@@ -1,0 +1,50 @@
+{% extends 'userbase.html' %}
+
+{% block title %}Summary{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+  <p class="right-align">Hi, {{ user.username }}!</p>
+  <h1>Summary</h1>
+  <div class="container">
+    <div class="row userhome">
+        <div class="col-md">
+          <div class="content">
+            <p>Total Time: </p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="content">
+            <p>Night: </p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="content">
+            <p>PIC: </p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="content">
+            <p>SIC: </p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="content">
+            <p>IFR: </p>
+          </div>
+        </div>
+    </div>
+    <div class="row userhome">
+      <div class="content">
+
+      </div>
+    </div>
+  
+{% else %}
+<div id="login-needed">
+  <p>You are not logged in.</p>
+  <p>Please <a href="{% url 'login' %}">Log In</a> or <a href="{% url 'signup' %}">Sign Up</a> to view logbook summary.</p>
+</div>
+{% endif %}
+{% endblock %}

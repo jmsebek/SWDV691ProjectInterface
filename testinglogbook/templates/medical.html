@@ -1,0 +1,42 @@
+{% extends 'userbase.html' %}
+{% block title %}Pilot Medical{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+  <p class="right-align">Hi, {{ user.username }}!</p>
+  <h1>Pilot Medical</h1>
+  <div class="container">
+    <div class="row userhome">
+      <div class="col-lg d-flex">
+        <div class="content flex-fill">
+        <h3>Current FAA Medical:</h3>
+        <p>Date: </p>
+        <p>Class: </p>
+        <p>Examiner: </p>
+        <p>Examiner Phone: </p>
+        <p>Notes: </p>
+        <h3>Next Medical Due:</h3>
+        <p>Your ..... medical expires on: </p>
+        <h3>Medical History</h3>
+        <p>No current data.</p>
+        </div>
+      </div>
+      <div class="col-lg d-flex">
+        <div class="content flex-fill">
+          <h3>Add a new medical:</h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+{% else %}
+  
+  <div id="login-needed">
+    <p>You are not logged in.</p>
+    <p>Please <a href="{% url 'login' %}">Log In</a> or <a href="{% url 'signup' %}">Sign Up</a> to view medical detail.</p>
+  </div>
+  
+{% endif %}
+{% endblock %}
