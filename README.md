@@ -1,2 +1,5 @@
 # SWDV691ProjectInterface
-Repository for project design elements
+
+Logbook Interface Repository
+
+This repository is for the interface design documents for the logbook application.
